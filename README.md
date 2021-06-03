@@ -1,1 +1,1 @@
-**This is a repository with all the JavaScript knowledge I know.
+**This is a repository with all the JavaScript knowledge I know.**
