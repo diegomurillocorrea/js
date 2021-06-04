@@ -2,7 +2,7 @@
 
 ## Function Purity ▶️🧠
 
-### It is a function that takes all of its inputs as direct, all of its outputs as direct, and it has no side effects. The functiona purity is not about the function itself for JavaScript, but rather about the function call.
+### It is a function that takes all of its inputs as, and it has no side effects. The function purity is not about the function itself for JavaScript, but rather about the function call.
 
 ```js
 // This is a pure function
