@@ -17,8 +17,6 @@ console.log(
     number * 5
 );
 
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
 // Explicit
 var age = 18;
 console.log( 
