@@ -47,6 +47,30 @@ var array = [ 1,2,3,4,5 ];
 
 multiplyByTwo( array, callback );
 ```
+## Closure 🔄🆕
+
+### Closure gives you access to an outer function’s scope from an inner function. Closures are created every time a function is created, at function creation time.
+
+```js
+function makeCounter () {
+    var counter = 0;
+    return function increment () {
+        return ++counter;
+    };
+}
+
+var c = makeCounter();
+
+c()
+// 1
+
+c()
+// 2
+
+c()
+// 3
+```
+
 ## Composition 🧰⚒️
 
 ### Composition is a way to combine objects or data types into more complex ones.
