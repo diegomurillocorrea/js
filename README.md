@@ -47,6 +47,33 @@ var array = [ 1,2,3,4,5 ];
 
 multiplyByTwo( array, callback );
 ```
+## Composition 🧰⚒️
+
+### Composition is a way to combine objects or data types into more complex ones.
+
+```js
+function composeThree ( fn3, fn2, fn1 ) {
+    return function composed ( v ) {
+        return fn3( fn2( fn1( v ) ) );
+    }
+}
+
+function minus2 ( x ) { return x - 2; };
+
+function triple ( x ) { return x * 3; };
+
+function increment ( x ) { return x + 1; };
+
+var f = composeThree( minus2, triple, increment );
+var p = composeThree( increment, triple, minus2 );
+
+f( 4 );
+// 13
+
+p( 4 )
+// 7
+```
+
 ## Immutability🗣️🚫
 
 ### Immutability is a core principle in functional programming, and has lots to offer to object-oriented programs as well.
