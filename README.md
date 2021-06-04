@@ -11,20 +11,28 @@ console.log(
     Number ( number ) 
 );
 
+// 1
+
 var isTrue = true
 console.log(
     Number ( isTrue )
 );
+
+// 1
 
 var isFalse = false
 console.log(
     Number ( isFalse )
 );
 
+// 0
+
 var age = 18;
 console.log( 
     "Hello, I am " + String ( age ) + " years old."
 );
+
+// "Hello, I am 18 years old."
 
 // Implicit
 var number = "3";
@@ -32,10 +40,14 @@ console.log(
     number * 5
 );
 
+// 15
+
 var age = 18;
 console.log(
     "Hello, I am " + age + " years old."
 );
+
+// "Hello, I am 18 years old."
 ```
 
 ## Callbacks 📲🔙
