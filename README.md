@@ -21,12 +21,12 @@ console.log(
 // "Hello, I am 18 years old."
 
 // Implicit
-var number = "3";
+var number = "1";
 console.log( 
     +number
 );
 
-// 15
+// 1
 
 var age = 18;
 console.log(
