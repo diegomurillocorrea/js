@@ -11,19 +11,27 @@ console.log(
     Number ( number ) 
 );
 
-// Implicit
-var number = "3";
-console.log( 
-    number * 5
+var isTrue = true
+console.log(
+    Number ( isTrue )
 );
 
-// Explicit
+var isFalse = false
+console.log(
+    Number ( isFalse )
+);
+
 var age = 18;
 console.log( 
     "Hello, I am " + String ( age ) + " years old."
 );
 
 // Implicit
+var number = "3";
+console.log( 
+    number * 5
+);
+
 var age = 18;
 console.log(
     "Hello, I am " + age + " years old."
@@ -50,6 +58,8 @@ function callback ( arr ) {
 }
   
 var array = [ 1,2,3,4,5 ];
-  
-multiplyByTwo( array, callback );
+
+console.log(
+    multiplyByTwo( array, callback );
+);
 ```
