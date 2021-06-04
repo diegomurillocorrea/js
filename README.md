@@ -1,5 +1,28 @@
 # 🟨 JavaScript Repository 🟨
 
+## Function Purity ▶️🧠
+
+### It is a function that takes all of its inputs as direct, all of its outputs as direct, and it has no side effects. The functiona purity is not about the function itself for JavaScript, but rather about the function call.
+
+```js
+// This is a pure function
+function addTwo ( x, y ) {
+    return x + y;
+}
+
+addTwo( 5, 5 );
+// 10
+
+// Impure function
+var z = 1;
+function addAnother ( x, y ) {
+    return addTwo( x, y ) + z;
+}
+
+addAnother( 5, 4 );
+// 10
+```
+
 ## Coercion 🔢🆎🆗
 
 ### Coercion is the automatic or implicit conversion of values from one data type to another. Conversion is similar to coercion because they both convert values from one data type to another with one key difference. Coercion is implicit whereas conversion can be either implicit or explicit.
