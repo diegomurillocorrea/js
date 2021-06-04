@@ -4,6 +4,20 @@
 
 ### Coercion is the automatic or implicit conversion of values from one data type to another. Conversion is similar to coercion because they both convert values from one data type to another with one key difference. Coercion is implicit whereas conversion can be either implicit or explicit.
 
+```js
+// Explicit
+var number = "1";
+console.log( 
+    Number ( number ) 
+);
+
+// Implicit
+var number = "3";
+console.log( 
+    number * 5
+);
+```
+
 ## Callbacks 📲🔙
 
 ### A callback is a function that is passed into another function as an argument, which is then invoked inside the outer function to complete some kind of process or action.
