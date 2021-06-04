@@ -7,32 +7,20 @@
 ```js
 // Explicit
 var number = "1";
-console.log( 
-    Number ( number ) 
-);
-
+Number ( number ) 
 // 1
 
 var age = 18;
-console.log( 
-    "Hello, I am " + String ( age ) + " years old."
-);
-
+"Hello, I am " + String ( age ) + " years old."
 // "Hello, I am 18 years old."
 
 // Implicit
 var number = "1";
-console.log( 
-    +number
-);
-
++number
 // 1
 
 var age = 18;
-console.log(
-    "Hello, I am " + age + " years old."
-);
-
+"Hello, I am " + age + " years old."
 // "Hello, I am 18 years old."
 ```
 
@@ -57,7 +45,38 @@ function callback ( arr ) {
   
 var array = [ 1,2,3,4,5 ];
 
-console.log(
-    multiplyByTwo( array, callback );
-);
+multiplyByTwo( array, callback );
+```
+## Immutability🗣️🚫
+
+### Immutability is a core principle in functional programming, and has lots to offer to object-oriented programs as well.
+
+```js
+var name = "Diego";
+name = "Enrique";
+// This is allowed
+
+const country = "El Salvador";
+country = "Nicaragua";
+// This is not allowed
+```
+### How to solve Immutability
+
+```js
+var name = "Diego";
+const age = 18;
+
+function changeName ( newName ) {
+    return `${ newName } Murillo`;
+}
+
+function changeAge ( newAge ) {
+    return newAge + 1;
+}
+
+changeName( name );
+// "Diego Murillo"
+
+changeAge( age );
+// 19
 ```
