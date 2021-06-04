@@ -16,6 +16,20 @@ var number = "3";
 console.log( 
     number * 5
 );
+
+* * * * * * * * * * * * * *
+
+// Explicit
+var age = 18;
+console.log( 
+    "Hello, I am " + String ( age ) + " years old."
+);
+
+// Implicit
+var age = 18;
+console.log(
+    "Hello, I am " + age + " years old."
+);
 ```
 
 ## Callbacks 📲🔙
