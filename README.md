@@ -13,20 +13,6 @@ console.log(
 
 // 1
 
-var isTrue = true
-console.log(
-    Number ( isTrue )
-);
-
-// 1
-
-var isFalse = false
-console.log(
-    Number ( isFalse )
-);
-
-// 0
-
 var age = 18;
 console.log( 
     "Hello, I am " + String ( age ) + " years old."
